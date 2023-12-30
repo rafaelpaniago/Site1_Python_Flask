@@ -3,10 +3,11 @@
 
 {% block conteudo %}
 <p>
-    <img class="imgretangular" src="{{ url_for('static', filename='Logo_IVD.png') }}">
+    <img class="imgretangular2" src="{{ url_for('static', filename='IMG_Home.png') }}">
 </p>
     <h1>Página Inicial</h1>
-    <h2>Projeto criado por {{ nome }}</h2>
+    <h2>Projeto 1 - Flask</h2>
+    <p>Nome: {{ dados.nome }}
     <p>Profissão: {{ dados.profissao }}
     <p>Canal: {{ dados.canal }}
 {% endblock %}
