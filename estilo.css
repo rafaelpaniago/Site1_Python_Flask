@@ -1,4 +1,61 @@
-.imgretangular{
-    width: 170px;
-    height: 69px;
+.imgretangular2 {
+    width: 147px;
+    height: auto;
+}
+
+.imgretangular3 {
+    width: 147px;
+    height: auto;
+}
+
+
+
+/* Ajustes no HEADER*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a1931;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 170px; /* Largura que eu quero na LOGO do site */
+    display: flex; /* Adicionando display flex para alinhar os elementos */
+    align-items: center; 
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 3px; /* Distância da logo e menu */
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7f50;
+}
+
+/* Principal */
+main {
+    padding: 20px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #0a1931;
+    color: #ffffff;
+    text-align: left; /* Alinhar texto à esquerda */
+    padding: 2px 20px; /* Redução da altura do rodapé */
 }
