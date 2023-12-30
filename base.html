@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
     <title>Site Flask 1</title>
-
-    
 </head>
 <body>
-    <nav>
-        <a href="/index">Página Inicial</a>
-        <a href="/contato">Contato</a>
-    </nav>
+    <header>
+        <div class="logo">
+            <img class="imgretangular" src="{{ url_for('static', filename='Logo_IVD.png') }}">
+        </div>
+        <nav>
+            <a href="/index">Página Inicial</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </header>
 
-    {% block conteudo %}
-    {% endblock %}
+    <main>
+        {% block conteudo %}
+        {% endblock %}
+    </main>
 
+    <footer>
+        <p>Projeto criado por Rafael Paniago</p>
+    </footer>
 </body>
 </html>
