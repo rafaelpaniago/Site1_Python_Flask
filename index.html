@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block conteudo %}
+<p>
+    <img class="imgretangular" src="{{ url_for('static', filename='Logo_IVD.png') }}">
+</p>
+    <h1>Página Inicial</h1>
+    <h2>Projeto criado por {{ nome }}</h2>
+    <p>Profissão: {{ dados.profissao }}
+    <p>Canal: {{ dados.canal }}
+{% endblock %}
