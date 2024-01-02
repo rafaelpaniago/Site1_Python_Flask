@@ -4,9 +4,9 @@ from flask import render_template
 @app.route('/')
 @app.route('/index')
 def index():
-    nome = "Rafael"
-    dados = {"profissao": "Analista de Dados", "canal": "Ivd"}
-    return render_template('index.html', nome=nome, dados=dados)
+    projeto1 = {"projeto": "1° projeto desenvolvido utilizando Flask"}
+    detalhes = {"paginas": "Duas páginas criadas (home, contato)", "objetivo": "Criar primeiro site"}
+    return render_template('index.html', projeto1=projeto1, detalhes=detalhes)
 
 @app.route('/contato')
 def contato():
